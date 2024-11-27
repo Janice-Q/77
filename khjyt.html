@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my page</title>
+    <style>
+   
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            font-family: "Microsoft YaHei";
+        }
+        
+        #top{
+            background-color: #212529;
+            width:auto;
+            color:white;
+            display: flex;
+            line-height: 50px;
+            justify-content: space-between;
+            padding:0 100px;
+            font-size: 20px;
+        }
+        #top h2{ 
+             font-size: 1.25rem;
+             font-weight: normal;
+             padding-top: 0.3125rem;
+              padding-bottom: 0.3125rem; }
+    
+    
+        #top ul{
+            display: flex;
+            list-style-type: none;
+           
+        }
+        
+        #top ul li{
+            margin-right: 10px;
+            color:#ddd;
+        }
+        #main{
+            background-color: #212529;
+            display: flex;
+            padding:0 100px;
+            padding-top: 100px;
+            font-size: 25px;
+            
+           
+
+        }
+        
+  
+        #main-left{
+            width:65%;
+         
+        }
+        #main-right{
+            width:35%;
+        }
+        #main-right img{
+            width:100%;
+        }
+        #main h2{
+            color: white;
+            font-size: 40px;
+        }
+        #main h2 span{
+            color: chocolate;
+        }
+        #main  button span{
+            border-radius: .3rem;
+            color: #fff;
+            background-color: #0d6efd;
+            border-color: #0d6efd;
+            display: inline-block;
+            font-weight: 400;
+            line-height: 1.5;
+            color: #212529;
+            text-align: center;
+            text-decoration: none;
+            font-size: 25px;
+    
+        }
+
+        #main p{
+            color: white;
+        }
+
+
+
+
+        #three{
+            padding:0 100px;
+            display: flex;
+            margin-top: 50px;
+            color: white;
+        }
+        #three>div{
+            padding:10px 30px;
+            text-align: center;
+        }
+        #left{
+            background-color: #212529;
+            margin-right: 50px;
+        }
+        #mid{
+            background-color: #6c757d;
+            margin-right: 50px;
+        }
+        #right{
+
+            background-color: #212529;
+
+        }
+        #left a,#right a{
+            background-color: #0d6efd;
+            text-decoration: none;
+            color:white;
+            display:inline-block;
+            padding:10px 20px;
+            margin-top:20px;
+            border-radius: 5px;
+        }
+        #mid a{
+            background-color: black;
+            text-decoration: none;
+            color: white;
+            display:inline-block ;
+            padding:10px 20px;
+            margin-top:20px;
+            border-radius: 5px;
+        }
+
+        #three{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        #left,#mid,#right{
+            flex: 1;
+            margin: 10px;
+            padding: 20px;
+            border: 1px solid #ccc;
+        }
+
+
+
+
+        @media(max-width:720px){
+
+            #main{
+                flex-direction: column;
+            }
+
+            #main-right img{
+            margin-left: 100px;
+            width:120%;
+            }
+            #top{
+                flex-direction: column;
+            }
+
+            #top ul{
+                margin-left: 100px;
+                margin-right: 0;
+                flex-direction: column;
+            }
+            #left,mid,right{
+                flex-basis: 100%;
+            }
+    
+
+
+
+
+
+        }
+
+        
+
+    </style>
+</head>
+<body>
+    <div id="top">
+
+        <h2>      网页设计第四组
+        </h2>
+        <ul>
+            <li>姓名</li>
+            <li>学号</li>
+            <li>班级</li>
+            <li>实践</li>
+        </ul>
+
+        
+        
+        
+        
+
+
+    </div>
+    <div id="main">
+        <div id="main-left">
+         <h2> 创建更好 <span>网页</span></h2>  
+            <p>
+
+                网页设计如同数字世界的艺术家，巧妙地将技术与美感融合，创造出既实用又引人入胜的视觉盛宴。
+
+            </p>
+            <button>
+                <span>开始创建</span>
+            </button>
+
+        </div>
+        <div id="main-right">
+
+            <img src="./family-confirming-evacuation-site-svgrepo-com(1).svg" alt="">
+
+        </div>
+        
+
+    </div><!--end of main-->
+    <div id="three">
+        <div id="left">
+            <img src="./feedback-week.svg" width="40" height="40">
+            <h2>实践</h2>  
+            <p>
+                构建全新网页并上传到GitHub以至可以被访问,将网页设计的导入媒体进行运用
+
+                </p>
+            <a href="#">read more</a>
+        </div>
+        <div id="mid">
+           <img src="./flight.svg" width="40" height="40">
+            <h2>实践</h2>
+            <p>构建全新网页并上传到GitHub以至可以被访问,将网页设计的导入媒体进行运用
+
+
+            </p>
+            <a href="#"><span>read more</span></a>
+            
+        </div>
+        <div id="right">
+            <img src="./人型A.svg" width="40" height="40">
+            <h2>
+                实践
+            </h2>
+            <p>
+                构建全新网页并上传到GitHub以至可以被访问,将网页设计的导入媒体进行运用
+
+
+            </p>
+            <a href="#">read more</a>
+            
+        </div>
+
+
+    </div>
+</body>
+</html>
